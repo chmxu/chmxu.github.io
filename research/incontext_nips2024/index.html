@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="description"
+        content="Towards Global Optimal Visual In-Context Learning Prompt Selection."> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towards Global Optimal Visual In-Context Learning Prompt Selection.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://chmxu.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Towards Global Optimal Visual In-Context Learning Prompt Selection</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://chmxu.github.io">Chengming Xu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://utkarshsinha.com">Chen Liu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://yikai-wang.github.io/">Yikai Wang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://yao-lab.github.io/">Yuan Yao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://yanweifu.github.io/index.html">Yanwei Fu</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Fudan University,</span>
+            <span class="author-block"><sup>2</sup>HKUST,</span>
+            <span class="author-block"><sup>3</sup>NTU</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2405.15279"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/chmxu/ranking_in_context"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser.png">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Proper in-context examples lead to significantly better results.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Visual In-Context Learning (VICL) is a prevailing way to transfer visual foundation models to new tasks by leveraging contextual information contained in in-context examples to enhance learning and prediction of query samples.
+            The fundamental problem in VICL is how to select the best prompt to activate its power as much as possible, which is equivalent to the ranking problem of testing the in-context behavior of each candidate in the alternative set and selecting the best one. To utilize a more appropriate ranking metric and more comprehensive information among the alternative set, we propose a novel in-context example selection framework to approximately identify the global optimal prompt, i.e. choosing the best performing in-context examples from all alternatives for each query sample. Our method, dubbed Partial2Global, adopts a transformer-based list-wise ranker to provide a more comprehensive comparison within several alternatives and a consistency-aware ranking aggregator to generate globally consistent ranking. 
+            The effectiveness of Partial2Global is validated through experiments on foreground segmentation, single object detection and image colorization, demonstrating that Partial2Global selects consistently better in-context examples compared with other methods, and thus establishes the new state-of-the-arts.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+       <!-- Re-rendering. -->
+        <h3 class="title is-4">Framework</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our Partial2Global involves a transformer-based list-wise ranker, which produces ranking prediction for different subsets and a onsistency-aware ranking aggregator to generate globally consistent ranking.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/framework.png" width="90%">
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/alg.png" width="90%">
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+
+
+      <div class="container is-max-desktop">
+
+         <h3 class="title is-4">Results</h3>
+         <div class="content has-text-centered">
+           <img src="./static/images/results.png" width="90%">
+         </div>
+         <div class="content has-text-centered">
+          <img src="./static/images/results2.png" width="90%">
+        </div>
+ 
+       </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{xu2024towards,
+      title={Towards Global Optimal Visual In-Context Learning Prompt Selection},
+      author={Xu, Chengming and Liu, Chen and Wang, Yikai and Yao, Yuan and Fu, Yanwei},
+      journal={arXiv preprint arXiv:2405.15279},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Thanks for the template from <a
+            href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
