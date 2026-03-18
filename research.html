@@ -1,365 +1,302 @@
-
 <!doctype html>
 <html lang="en">
   <head>
-  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Chengming Xu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Chengming Xu</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-29643011-3', 'auto');
-      ga('send', 'pageview');
-    </script>
-
-    <!-- For all browsers -->
-    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
-    <link rel="stylesheet" href="assets/css/academicons.css"/>
-    
-    <style>
-      button.accordion {
-      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      cursor: pointer;
-      padding: 0px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 100%;
-      transition: 0.3s;
-      background-color: #f8f8f8;
-      }
-      button.accordion.active, button.accordion:hover {
-      background-color: #f8f8f8;
-      }
-      button.accordion:after {
-      content: " [+] ";
-      font-size: 90%;
-      color:#777;
-      float: left;
-      margin-left: 1px;
-      }
-
-      button.accordion.active:after {
-      content: " [\2212] ";
-      }
-      div.panel {
-      padding: 0 20px;
-      margin-top: 5px;
-      display: none;
-      background-color: white;
-      font-size: 100%;
-      }
-      div.panel.show {
-      display: block !important;
-      }
-      .social-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-    </style>
+    <link rel="stylesheet" href="stylesheets/research.css">
+    <link rel="stylesheet" href="assets/css/academicons.min.css">
+    <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Chengming Xu</h1>
-        <p>Ph.D. Student<br>School of Data Science<br>Fudan University</p>
-    <h3><a href="https://chmxu.github.io/">Home</a></h3>
-        <h3><a href="https://chmxu.github.io/research.html">Research</a></h3>
-    <b>Social</b><br>
-        <div class="social-row">
-          <a href="mailto:cmxu18@fudan.edu.cn" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
-          <a href="https://scholar.google.com/citations?user=pjcYzvYAAAAJ&hl=en" target="_blank"><i class="ai ai-fw ai-google-scholar-square"></i> Scholar</a><br>
-          <a href="http://github.com/chmxu"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
-          <br>
-        </div>
-        <br>
-
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-
-    <a href="https://clustrmaps.com/site/1bvv4"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=ZohDxgm_QrkBc5PYkc9rQ1gD-VC9CPD3DW8ESeBVqvA&cl=ffffff" /></a>
-
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Chengming Xu</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="research.html">Research</a>
+        </nav>
       </header>
-      <section>
 
-    <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published Papers</h2>
-    <p style="margin:0"> 
-    <b>FFP-300K: Scaling First-Frame Propagation for Generalizable Video Editing</b><br>
+      <main class="container research-page">
+        <section class="page-intro research-intro">
+          <p class="eyebrow">Publication List</p>
+          <h1>Research</h1>
+          <p class="section-copy">
+            A complete list of publications and preprints. Use the filters below to narrow by year, type, keyword,
+            or highlighted works.
+          </p>
 
-    Xijie Huang<sup>*</sup>, <b>Chengming Xu</b><sup>*</sup>, Donghao Luo, Xiaobin Hu, Peng Tang, Jiangning Zhang, Chengjie Wang, Yanwei Fu
-          <br>CVPR, 2026
-    <br> <a href="https://arxiv.org/abs/2601.01720"><i>[Paper]</i></a> 
-    <a href="https://ffp-300k.github.io/"><i>[Project]</i></a> 
-  <br><br>
+          <form id="filterForm" class="filter-bar" aria-label="Publication filters">
+            <label>
+              Year
+              <select id="yearFilter">
+                <option value="all">All</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+              </select>
+            </label>
 
-      <p style="margin:0"> 
-    <b>VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models</b><br>
+            <label>
+              Type
+              <select id="typeFilter">
+                <option value="all">All</option>
+                <option value="conference">Conference</option>
+                <option value="journal">Journal</option>
+                <option value="preprint">Preprint</option>
+              </select>
+            </label>
 
-    Xinlei Yu, <b>Chengming Xu</b>, Guibin Zhang, Zhangquan Chen, Yudong Zhang, Yongbo He, Peng-Tao Jiang, Jiangning Zhang, Xiaobin Hu, Shuicheng Yan 
-          <br>CVPR, 2026
-    <br> <a href="https://arxiv.org/abs/2511.11007"><i>[Paper]</i></a> 
-    <a href="https://github.com/YU-deep/VisMem"><i>[Code]</i></a> 
-  <br><br>
+            <label>
+              Search
+              <input id="searchFilter" type="search" placeholder="Title / venue / keyword">
+            </label>
 
-      <p style="margin:0"> 
-    <b>Visual Document Understanding and Reasoning: A Multi-Agent Collaboration Framework with Agent-Wise Adaptive Test-Time Scaling</b><br>
+            <label class="checkbox">
+              <input id="highlightFilter" type="checkbox">
+              Highlight only
+            </label>
 
-    Xinlei Yu, <b>Chengming Xu</b>, Zhangquan Chen, Yudong Zhang, Shilin Lu, Cheng Yang, Jiangning Zhang, Shuicheng Yan, Xiaobin Hu
-          <br>CVPR, 2026
-    <br> <a href="https://arxiv.org/abs/2508.03404"><i>[Paper]</i></a> 
-  <br><br>
+            <button id="resetFilter" type="button">Reset</button>
+          </form>
 
-      <p style="margin:0"> 
-    <b>Omni-Attack: Adversarial Attacks on Open-Ended VQA in Black-Box Multimodal LLMs</b><br>
+          <p id="filterStatus" class="filter-status" aria-live="polite"></p>
+        </section>
 
-    Kai Hu, Weichen Yu, Li Zhang, Alexander Robey, Andy Zou, Haoqi Hu, <b>Chengming Xu</b>, Matt Fredrikson
-          <br>CVPR, 2026
-  <br><br>
+        <section class="paper-group" data-group="published">
+          <h2>Published Papers</h2>
 
-        <p style="margin:0"> 
-    <b>Visual Multi-Agent System: Mitigating Hallucination Snowballing via Visual Flow</b><br>
+          <h3 class="year-heading">2026</h3>
+          <div class="paper-list" data-year-group="2026">
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="true" data-search="ffp-300k cvpr video editing">
+              <span class="badge">Highlight</span>
+              <p class="paper-title">FFP-300K: Scaling First-Frame Propagation for Generalizable Video Editing</p>
+              <p class="paper-authors">Xijie Huang*, <strong>Chengming Xu*</strong>, Donghao Luo, Xiaobin Hu, Peng Tang, Jiangning Zhang, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">CVPR 2026</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2601.01720" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://ffp-300k.github.io/" target="_blank" rel="noopener noreferrer">Project</a></p>
+            </article>
 
-    Xinlei Yu, <b>Chengming Xu</b>, Guibin Zhang, Yongbo He, Zhangquan Chen, Zhucun Xue, Jiangning Zhang, Yue Liao, Xiaobin Hu, Yu-Gang Jiang, Shuicheng Yan
-          <br>ICLR, 2026
-    <br> <a href="https://arxiv.org/abs/2509.21789"><i>[Paper]</i></a> 
-    <a href="https://github.com/YU-deep/ViF"><i>[Code]</i></a> 
-  <br><br>
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="false" data-search="vismem cvpr vision-language model">
+              <p class="paper-title">VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models</p>
+              <p class="paper-authors">Xinlei Yu, <strong>Chengming Xu</strong>, Guibin Zhang, Zhangquan Chen, Yudong Zhang, Yongbo He, Peng-Tao Jiang, Jiangning Zhang, Xiaobin Hu, Shuicheng Yan</p>
+              <p class="paper-meta">CVPR 2026</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2511.11007" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/YU-deep/VisMem" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Swiftvideo: A unified framework for few-step video generation through trajectory-distribution alignment</b><br>
-    
-      Yanxiao Sun, Jiafu Wu, Yun Cao, <b>Chengming Xu</b>, Yabiao Wang, Weijian Cao, Donghao Luo, Chengjie Wang, Yanwei Fu 
-          <br>AAAI, 2026
-          <br> <a href="https://arxiv.org/pdf/2508.06082"><i>[Paper]</i></a> 
-          <br><br>
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="false" data-search="visual document understanding cvpr multi-agent">
+              <p class="paper-title">Visual Document Understanding and Reasoning: A Multi-Agent Collaboration Framework with Agent-Wise Adaptive Test-Time Scaling</p>
+              <p class="paper-authors">Xinlei Yu, <strong>Chengming Xu</strong>, Zhangquan Chen, Yudong Zhang, Shilin Lu, Cheng Yang, Jiangning Zhang, Shuicheng Yan, Xiaobin Hu</p>
+              <p class="paper-meta">CVPR 2026</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2508.03404" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Towards Reliable and Holistic Visual In-Context Learning Prompt Selection</b><br>
-    
-      Wenxiao Wu, Jing-Hao Xue, <b>Chengming Xu</b><sup><span>&#8224;</span></sup>, Chen Liu, Xinwei Sun, Changxin Gao, Nong Sang, Yanwei Fu 
-          <br>NeurIPS, 2025
-          <br> <a href="https://arxiv.org/pdf/2509.25989"><i>[Paper]</i></a> 
-          <a href="https://github.com/Wu-Wenxiao/RH-Partial2Global"><i>[Code]</i></a>
-          <br><br>
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="false" data-search="omni-attack cvpr vqa multimodal llm">
+              <p class="paper-title">Omni-Attack: Adversarial Attacks on Open-Ended VQA in Black-Box Multimodal LLMs</p>
+              <p class="paper-authors">Kai Hu, Weichen Yu, Li Zhang, Alexander Robey, Andy Zou, Haoqi Hu, <strong>Chengming Xu</strong>, Matt Fredrikson</p>
+              <p class="paper-meta">CVPR 2026</p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation</b><br>
-    
-      Weipeng Tan<sup>*</sup>, Chuming Lin<sup>*</sup>, <b>Chengming Xu</b><sup><span>&#8224;</span></sup>, FeiFan Xu, Xiaobin Hu, Xiaozhong Ji, Junwei Zhu, Chengjie Wang, Yanwei Fu
-          <br>ACM MM, 2025
-          <br> <a href="https://arxiv.org/pdf/2504.18087?"><i>[Paper]</i></a> 
-          <a href="https://github.com/toto222/DICE-Talk"><i>[Code]</i></a>
-          <br><br>
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="true" data-search="visual multi-agent system iclr hallucination visual flow">
+              <span class="badge">Highlight</span>
+              <p class="paper-title">Visual Multi-Agent System: Mitigating Hallucination Snowballing via Visual Flow</p>
+              <p class="paper-authors">Xinlei Yu, <strong>Chengming Xu</strong>, Guibin Zhang, Yongbo He, Zhangquan Chen, Zhucun Xue, Jiangning Zhang, Yue Liao, Xiaobin Hu, Yu-Gang Jiang, Shuicheng Yan</p>
+              <p class="paper-meta">ICLR 2026</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2509.21789" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/YU-deep/ViF" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>StrandDesigner: Towards Practical Strand Generation with Sketch Guidance</b><br>
+            <article class="paper-item" data-year="2026" data-type="conference" data-highlight="false" data-search="swiftvideo aaai video generation">
+              <p class="paper-title">Swiftvideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment</p>
+              <p class="paper-authors">Yanxiao Sun, Jiafu Wu, Yun Cao, <strong>Chengming Xu</strong>, Yabiao Wang, Weijian Cao, Donghao Luo, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">AAAI 2026</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2508.06082" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
+          </div>
 
-      Na Zhang<sup>*</sup>, Moran Li<sup>*</sup>, <b>Chengming Xu</b><sup><span>&#8224;</span></sup>, Han Feng, Xiaobin Hu, Jiangning Zhang, Weijian Cao, Chengjie Wang, Yanwei Fu
-          <br>ACM MM, 2025
-          <br> <a href="https://arxiv.org/pdf/2508.01650?"><i>[Paper]</i></a> 
-          <br><br>
+          <h3 class="year-heading">2025</h3>
+          <div class="paper-list" data-year-group="2025">
+            <article class="paper-item" data-year="2025" data-type="conference" data-highlight="false" data-search="reliable holistic visual in-context learning prompt selection neurips">
+              <p class="paper-title">Towards Reliable and Holistic Visual In-Context Learning Prompt Selection</p>
+              <p class="paper-authors">Wenxiao Wu, Jing-Hao Xue, <strong>Chengming Xu†</strong>, Chen Liu, Xinwei Sun, Changxin Gao, Nong Sang, Yanwei Fu</p>
+              <p class="paper-meta">NeurIPS 2025</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2509.25989" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/Wu-Wenxiao/RH-Partial2Global" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>AnyMaker: Zero-shot General Object Customization via Decoupled Dual-Level ID Injection</b><br>
-    
-      Lingjie Kong<sup>*</sup>, Kai Wu<sup>*</sup>, <b>Chengming Xu</b><sup><span>&#8224;</span></sup>, Xiaobin Hu, Wenhui Han, Jinlong Peng, Donghao Luo, Jiangning Zhang, Chengjie Wang, Yanwei Fu
-      <br>CVPR, 2025
-      <br> <a href="https://arxiv.org/pdf/2406.11643"><i>[Paper]</i></a> 
-    <br><br>
+            <article class="paper-item" data-year="2025" data-type="conference" data-highlight="false" data-search="disentangle identity cooperate emotion talking portrait acm mm">
+              <p class="paper-title">Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation</p>
+              <p class="paper-authors">Weipeng Tan*, Chuming Lin*, <strong>Chengming Xu†</strong>, Feifan Xu, Xiaobin Hu, Xiaozhong Ji, Junwei Zhu, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">ACM MM 2025</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2504.18087" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/toto222/DICE-Talk" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>SVFR: A Unified Framework for Generalized Video Face Restoration</b><br>
-    
-      Zhiyao Wang, Xu Chen, <b>Chengming Xu</b>, Junwei Zhu, Xiaobin Hu, Jiangning Zhang, Chengjie Wang, Yuqi Liu, Yiyi Zhou, Rongrong Ji
-      <br>CVPR, 2025
-      <br> <a href="https://arxiv.org/pdf/2501.01235"><i>[Paper]</i></a> 
-      <a href="https://github.com/wangzhiyaoo/SVFR"><i>[Code]</i></a>
-    <br><br>
+            <article class="paper-item" data-year="2025" data-type="conference" data-highlight="false" data-search="stranddesigner sketch guidance acm mm">
+              <p class="paper-title">StrandDesigner: Towards Practical Strand Generation with Sketch Guidance</p>
+              <p class="paper-authors">Na Zhang*, Moran Li*, <strong>Chengming Xu†</strong>, Han Feng, Xiaobin Hu, Jiangning Zhang, Weijian Cao, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">ACM MM 2025</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2508.01650" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-  
-    <p style="margin:0"> 
-      <b>Towards Global Optimal Visual In-Context Learning Prompt Selection</b><br>
-      
-      <b>Chengming Xu</b><sup>*</sup>, Chen Liu<sup>*</sup>, Yikai Wang, Yuan Yao, Yanwei Fu
+            <article class="paper-item" data-year="2025" data-type="conference" data-highlight="false" data-search="anymaker cvpr object customization">
+              <p class="paper-title">AnyMaker: Zero-shot General Object Customization via Decoupled Dual-Level ID Injection</p>
+              <p class="paper-authors">Lingjie Kong*, Kai Wu*, <strong>Chengming Xu†</strong>, Xiaobin Hu, Wenhui Han, Jinlong Peng, Donghao Luo, Jiangning Zhang, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">CVPR 2025</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2406.11643" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-      <br>NeurIPS, 2024
-      <br> <a href="https://arxiv.org/pdf/2405.15279"><i>[Paper]</i></a>
-      <a href="https://github.com/chmxu/ranking_in_context"><i>[Code]</i></a>
-      
-<br><br>
-    <p style="margin:0"> 
-      <b>Faster OreFSDet: A lightweight and effective few-shot object detector for ore images</b><br>
-      
-      Yang Zhang, Le Cheng, Yuting Peng, <b>Chengming Xu</b>, Yanwei Fu, Bo Wu, Guodong Sun
+            <article class="paper-item" data-year="2025" data-type="conference" data-highlight="false" data-search="svfr cvpr video face restoration">
+              <p class="paper-title">SVFR: A Unified Framework for Generalized Video Face Restoration</p>
+              <p class="paper-authors">Zhiyao Wang, Xu Chen, <strong>Chengming Xu</strong>, Junwei Zhu, Xiaobin Hu, Jiangning Zhang, Chengjie Wang, Yuqi Liu, Yiyi Zhou, Rongrong Ji</p>
+              <p class="paper-meta">CVPR 2025</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2501.01235" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/wangzhiyaoo/SVFR" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
+          </div>
 
-      <br>Pattern Recognition (PR), 2023
-      <br> <a href="https://arxiv.org/pdf/2305.01183"><i>[Paper]</i></a>
-      
-<br><br>
+          <h3 class="year-heading">2024-2019</h3>
+          <div class="paper-list" data-year-group="2024-2019">
+            <article class="paper-item" data-year="2024" data-type="conference" data-search="global optimal visual in-context learning neurips">
+              <p class="paper-title">Towards Global Optimal Visual In-Context Learning Prompt Selection</p>
+              <p class="paper-authors"><strong>Chengming Xu*</strong>, Chen Liu*, Yikai Wang, Yuan Yao, Yanwei Fu</p>
+              <p class="paper-meta">NeurIPS 2024</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2405.15279" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/ranking_in_context" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
+            <article class="paper-item" data-year="2023" data-type="journal" data-highlight="false" data-search="faster orefsdet pattern recognition">
+              <p class="paper-title">Faster OreFSDet: A Lightweight and Effective Few-Shot Object Detector for Ore Images</p>
+              <p class="paper-authors">Yang Zhang, Le Cheng, Yuting Peng, <strong>Chengming Xu</strong>, Yanwei Fu, Bo Wu, Guodong Sun</p>
+              <p class="paper-meta">Pattern Recognition (PR), 2023</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2305.01183" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>PatchMix Augmentation to Identify Causal Features in Few-shot Learning</b><br>
+            <article class="paper-item" data-year="2022" data-type="journal" data-highlight="true" data-search="patchmix tpami few-shot learning">
+              <span class="badge">Highlight</span>
+              <p class="paper-title">PatchMix Augmentation to Identify Causal Features in Few-shot Learning</p>
+              <p class="paper-authors"><strong>Chengming Xu*</strong>, Chen Liu*, Xinwei Sun, Siqian Yang, Yabiao Wang, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-meta">IEEE TPAMI, 2022</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2211.16019" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/PatchMix" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-      <b>Chengming Xu</b><sup>*</sup>, Chen Liu<sup>*</sup>, Xinwei Sun, Siqian Yang, Yabiao Wang, Chengjie Wang, Yanwei Fu
-      <br>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022
-      <br> <a href="https://arxiv.org/pdf/2211.16019"><i>[Paper]</i></a>
-      <a href="https://github.com/chmxu/PatchMix"><i>[Code]</i></a>
-      
-<br><br>
+            <article class="paper-item" data-year="2022" data-type="journal" data-highlight="false" data-search="efficient few-shot adaptation vision transformers tmlr">
+              <p class="paper-title">Exploring Efficient Few-shot Adaptation for Vision Transformers</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Siqian Yang, Yabiao Wang, Zhanxiong Wang, Yanwei Fu, Xiangyang Xue</p>
+              <p class="paper-meta">TMLR, 2022</p>
+              <p class="paper-links"><a href="https://openreview.net/pdf?id=n3qLz4eL1l" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/eTT_TMLR2022" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Exploring Efficient Few-shot Adaptation for Vision Transformers</b><br>
+            <article class="paper-item" data-year="2022" data-type="conference" data-highlight="false" data-search="split-pu acm mm positive unlabeled learning">
+              <p class="paper-title">Split-PU: Hardness-aware Training Strategy for Positive-Unlabeled Learning</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Chen Liu, Siqian Yang, Yabiao Wang, Shijie Zhang, Lijie Jia, Yanwei Fu</p>
+              <p class="paper-meta">ACM MM, 2022</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2211.16756" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/SplitPU_MM2022" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-      <b>Chengming Xu</b>, Siqian Yang, Yabiao Wang, Zhanxiong Wang, Yanwei Fu, Xiangyang Xue
-      <br>Transactions of Machine Learning Research (TMLR), 2022
-      <br> <a href="https://openreview.net/pdf?id=n3qLz4eL1l"><i>[Paper]</i></a>
-      <a href="https://github.com/chmxu/eTT_TMLR2022"><i>[Code]</i></a>
-      
-<br><br>
+            <article class="paper-item" data-year="2021" data-type="conference" data-highlight="false" data-search="image local autoregressive transformer neurips">
+              <p class="paper-title">The Image Local Autoregressive Transformer</p>
+              <p class="paper-authors">Chenjie Cao, Yuxin Hong, Xiang Li, Chengrong Wang, <strong>Chengming Xu</strong>, Yanwei Fu, Xiangyang Xue</p>
+              <p class="paper-meta">NeurIPS, 2021</p>
+              <p class="paper-links"><a href="https://proceedings.neurips.cc/paper/2021/file/9996535e07258a7bbfd8b132435c5962-Paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/ewrfcas/iLAT" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Split-PU: Hardness-aware Training Strategy for Positive-Unlabeled Learning</b><br>
+            <article class="paper-item" data-year="2021" data-type="conference" data-highlight="false" data-search="salient boundary feature action localization cvpr">
+              <p class="paper-title">Learning Salient Boundary Feature for Anchor-free Temporal Action Localization</p>
+              <p class="paper-authors">Chuming Lin*, <strong>Chengming Xu*</strong>, Donghao Luo, Yabiao Wang, Ying Tai, Chengjie Wang, Jilin Li, Feiyue Huang, Yanwei Fu</p>
+              <p class="paper-meta">CVPR, 2021</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2103.13137.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/TencentYoutuResearch/ActionDetection-AFSD" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-      <b>Chengming Xu</b>, Chen Liu, Siqian Yang, Yabiao Wang, Shijie Zhang, Lijie Jia, Yanwei Fu
-      <br>ACM International Conference on Multimedia (MM), 2022 
-      <br><a href="https://arxiv.org/pdf/2211.16756"><i>[Paper]</i></a>
-      <a href="https://github.com/chmxu/SplitPU_MM2022"><i>[Code]</i></a>
-      
-<br><br>
+            <article class="paper-item" data-year="2021" data-type="conference" data-highlight="false" data-search="dynamic alignment meta-filter few-shot learning cvpr">
+              <p class="paper-title">Learning Dynamic Alignment via Meta-filter for Few-shot Learning</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Chen Liu, Li Zhang, Jilin Li, Feiyue Huang, Changjie Wang, Yanwei Fu, Xiangyang Xue</p>
+              <p class="paper-meta">CVPR, 2021</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2103.13582.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/Dynamic-Meta-filter" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>The image local autoregressive transformer</b><br>
+            <article class="paper-item" data-year="2021" data-type="conference" data-highlight="false" data-search="few-shot embedding model contrastive learning aaai">
+              <p class="paper-title">Learning a Few-shot Embedding Model by Contrastive Learning</p>
+              <p class="paper-authors">Chen Liu*, Li Zhang*, <strong>Chengming Xu</strong>, Siqian Yang, Yanwei Fu, Jilin Li, Chengjie Wang</p>
+              <p class="paper-meta">AAAI, 2021</p>
+              <p class="paper-links"><a href="https://www.aaai.org/AAAI21Papers/AAAI-2249.LiuC.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/corwinliu9669/Learning-a-Few-shot-Embedding-Model-with-Contrastive-Learning" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-      Chenjie Cao, Yuxin Hong, Xiang Li, Chengrong Wang, <b>Chengming Xu</b>, Yanwei Fu, Xiangyang Xue
-      <br>Advances in Neural Information Processing Systems (NeurIPS), 2021 <br>
-      <a href="https://proceedings.neurips.cc/paper/2021/file/9996535e07258a7bbfd8b132435c5962-Paper.pdf"><i>[Paper]</i></a>
-      <a href="https://github.com/ewrfcas/iLAT"><i>[Code]</i></a>
-      
-<br><br>
+            <article class="paper-item" data-year="2020" data-type="journal" data-highlight="false" data-search="pose-guided person image synthesis tip">
+              <p class="paper-title">Pose-Guided Person Image Synthesis in the Non-Iconic Views</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Yanwei Fu, Chao Wen, Ye Pan, Yu-Gang Jiang, Xiangyang Xue</p>
+              <p class="paper-meta">IEEE TIP, 2020</p>
+              <p class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/9200521" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/MR-Net.git" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Learning Salient Boundary Feature for Anchor-free Temporal Action Localization</b><br>
+            <article class="paper-item" data-year="2020" data-type="conference" data-highlight="false" data-search="embarrassingly simple baseline one-shot learning cvprw">
+              <p class="paper-title">An Embarrassingly Simple Baseline to One-Shot Learning</p>
+              <p class="paper-authors">Chen Liu*, <strong>Chengming Xu*</strong>, Yikai Wang, Li Zhang, Yanwei Fu</p>
+              <p class="paper-meta">CVPRW, 2020</p>
+              <p class="paper-links"><a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w54/Liu_An_Embarrassingly_Simple_Baseline_to_One-Shot_Learning_CVPRW_2020_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/corwinliu9669/embarrassingly-simple-baseline.git" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-      Chuming Lin<sup>*</sup>, <b>Chengming Xu</b><sup>*</sup>, Donghao Luo, Yabiao Wang, Ying Tai, Chengjie Wang, Jilin Li, Feiyue Huang, Yanwei Fu
-      <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021
-      <br> <a href="https://arxiv.org/pdf/2103.13137.pdf"><i>[Paper]</i></a>
-      <a href="https://github.com/TencentYoutuResearch/ActionDetection-AFSD"><i>[Code]</i></a>
-      
-<br><br>
+            <article class="paper-item" data-year="2020" data-type="conference" data-highlight="false" data-search="instance credibility inference few-shot learning cvpr">
+              <p class="paper-title">Instance Credibility Inference for Few-Shot Learning</p>
+              <p class="paper-authors">Yikai Wang, <strong>Chengming Xu</strong>, Chen Liu, Li Zhang, Yanwei Fu</p>
+              <p class="paper-meta">CVPR, 2020</p>
+              <p class="paper-links"><a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Instance_Credibility_Inference_for_Few-Shot_Learning_CVPR_2020_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/Yikai-Wang/ICI-FSL" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
 
-<p style="margin:0"> 
-      <b>Learning Dynamic Alignment via Meta-filter for Few-shot Learning</b><br>
+            <article class="paper-item" data-year="2019" data-type="journal" data-highlight="false" data-search="figure skating sport videos tcsvt">
+              <p class="paper-title">Learning to Score Figure Skating Sport Videos</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Yanwei Fu, Bing Zhang, Zitian Chen, Yu-Gang Jiang, Xiangyang Xue</p>
+              <p class="paper-meta">IEEE TCSVT, 2019</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/1802.02774.pdf" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/chmxu/MS_LSTM.git" target="_blank" rel="noopener noreferrer">Code</a></p>
+            </article>
+          </div>
+        </section>
 
-      <b>Chengming Xu</b>, Chen Liu, Li Zhang, Jilin Li, Feiyue Huang, Changjie Wang, Yanwei Fu, Xiangyang Xue
-      <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021
-      <br> <a href="https://arxiv.org/pdf/2103.13582.pdf"><i>[Paper]</i></a>
-      <a href="https://github.com/chmxu/Dynamic-Meta-filter"><i>[Code]</i></a>
-      
-<br><br>
+        <section class="paper-group" data-group="preprint">
+          <h2>Preprint Papers</h2>
+          <div class="paper-list">
+            <article class="paper-item" data-year="2024" data-type="preprint" data-highlight="false" data-search="difffae one-shot facial appearance editing">
+              <p class="paper-title">DiffFAE: Advancing High-fidelity One-shot Facial Appearance Editing with Space-sensitive Customization and Semantic Preservation</p>
+              <p class="paper-authors">Qilin Wang, Jiangning Zhang, <strong>Chengming Xu</strong>, Weijian Cao, Ying Tai, Yue Han, Yanhao Ge, Hong Gu, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2403.17664" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Learning a Few-shot Embedding Model by Contrastive Learning</b><br>
+            <article class="paper-item" data-year="2024" data-type="preprint" data-highlight="false" data-search="theory cross-modality distillation contrastive learning">
+              <p class="paper-title">On the Theory of Cross-Modality Distillation with Contrastive Learning</p>
+              <p class="paper-authors">Hangyu Lin, Chen Liu, <strong>Chengming Xu</strong>, Zhengqi Gao, Yanwei Fu, Yuan Yao</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2405.03355" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-      Chen Liu<sup>*</sup>, Li Zhang<sup>*</sup>, <b>Chengming Xu</b>, Siqian Yang, Yanwei Fu, Jilin Li, Chengjie Wang
-      <br>AAAI, 2021
-      <br> <a href="https://www.aaai.org/AAAI21Papers/AAAI-2249.LiuC.pdf"><i>[Paper]</i></a>
-      </a> 
-        <a href="https://github.com/corwinliu9669/Learning-a-Few-shot-Embedding-Model-with-Contrastive-Learning"><i>[Code]</i></a>
-<br><br>
+            <article class="paper-item" data-year="2024" data-type="preprint" data-highlight="false" data-search="stylemaster flexible stylized image generation diffusion">
+              <p class="paper-title">StyleMaster: Towards Flexible Stylized Image Generation with Diffusion Models</p>
+              <p class="paper-authors"><strong>Chengming Xu</strong>, Kai Hu, Donghao Luo, Jiangning Zhang, Qilin Wang, Xiaobin Hu, Yanwei Fu, Chengjie Wang</p>
+              <p class="paper-links"><a href="https://arxiv.org/abs/2405.15287" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
 
-    <p style="margin:0"> 
-      <b>Pose-Guided Person Image Synthesis in the Non-Iconic Views</b><br>
+            <article class="paper-item" data-year="2024" data-type="preprint" data-highlight="false" data-search="vividpose stable video diffusion human image animation">
+              <p class="paper-title">VividPose: Advancing Stable Video Diffusion for Realistic Human Image Animation</p>
+              <p class="paper-authors">Qilin Wang, Zhengkai Jiang, <strong>Chengming Xu</strong>, Jiangning Zhang, Yabiao Wang, Xinyi Zhang, Yun Cao, Weijian Cao, Chengjie Wang, Yanwei Fu</p>
+              <p class="paper-links"><a href="https://arxiv.org/pdf/2405.18156" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            </article>
+          </div>
+        </section>
+      </main>
 
-      <b>Chengming Xu</b>, Yanwei Fu, Chao Wen, Ye Pan, Yu-Gang Jiang, Xiangyang Xue
-      <br>IEEE Transactions on Image Processing (TIP), 2020
-      <br> <a href="https://ieeexplore.ieee.org/abstract/document/9200521"><i>[Paper]</i></a> 
-        <a href="https://github.com/chmxu/MR-Net.git"><i>[Code]</i></a>
-<br><br>
+      <footer class="footer container">
+        <div class="footer-inner">
+          <p class="footer-note">Maintained in pure static HTML/CSS/JS · Optimized for readability and long-term updates.</p>
+          <div class="visitor-panel" aria-label="Visitor map">
+            <p class="visitor-title">Visitors</p>
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ZohDxgm_QrkBc5PYkc9rQ1gD-VC9CPD3DW8ESeBVqvA&cl=ffffff&w=a"></script>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-    <p style="margin:0"> 
-      <b>An Embarrassingly Simple Baseline to One-Shot Learning</b><br>
-
-      Chen Liu<sup>*</sup>, <b>Chengming Xu<sup>*</sup></b>, Yikia Wang, Li Zhang, Yanwei Fu
-      <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2020 
-      <br> <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w54/Liu_An_Embarrassingly_Simple_Baseline_to_One-Shot_Learning_CVPRW_2020_paper.pdf"><i>[Paper]</i></a> 
-      <a href="https://github.com/corwinliu9669/embarrassingly-simple-baseline.git"><i>[Code]</i></a>
-      
-<br><br>
-
-    <p style="margin:0"> 
-      <b>Instance Credibility Inference for Few-Shot Learning</b><br>
-
-      Yikai Wang, <b>Chengming Xu</b>, Chen Liu, Li Zhang, Yanwei Fu
-      <br>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020 
-      <br> <a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Instance_Credibility_Inference_for_Few-Shot_Learning_CVPR_2020_paper.pdf"><i>[Paper]</i></a> 
-        <a href="https://github.com/Yikai-Wang/ICI-FSL"><i>[Code]</i></a>
-<br><br>
-
-    <p style="margin:0"> 
-      <b>Learning to score figure skating sport videos</b><br>
-
-      <b>Chengming Xu</b>, Yanwei Fu, Bing Zhang, Zitian Chen, Yu-Gang Jiang, Xiangyang Xue
-      <br>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019 
-      <br> <a href="https://arxiv.org/pdf/1802.02774.pdf"><i>[Paper]</i></a> 
-        <a href="https://github.com/chmxu/MS_LSTM.git"><i>[Code]</i></a>
-<br><br>
-
-<h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preprint Papers</h2>
-
-    <p style="margin:0"> 
-  <b>DiffFAE: Advancing High-fidelity One-shot Facial Appearance Editing with Space-sensitive Customization and Semantic Preservation</b><br>
-
-  Qilin Wang, Jiangning Zhang, <b>Chengming Xu</b>, Weijian Cao, Ying Tai, Yue Han, Yanhao Ge, Hong Gu, Chengjie Wang, Yanwei Fu
-  <br> <a href="https://arxiv.org/pdf/2403.17664"><i>[Paper]</i></a> 
-<br><br>
-
-<p style="margin:0"> 
-  <b>On the Theory of Cross-Modality Distillation with Contrastive Learning</b><br>
-
-  Hangyu Lin, Chen Liu, <b>Chengming Xu</b>, Zhengqi Gao, Yanwei Fu, Yuan Yao
-  <br> <a href="https://arxiv.org/pdf/2405.03355"><i>[Paper]</i></a> 
-<br><br>
-
-<p style="margin:0"> 
-  <b>StyleMaster: Towards Flexible Stylized Image Generation with Diffusion Models</b><br>
-
-  <b>Chengming Xu</b>, Kai Hu, Donghao Luo, Jiangning Zhang, Qilin Wang, Xiaobin Hu, Yanwei Fu, Chengjie Wang
-  <br> <a href="https://arxiv.org/abs/2405.15287"><i>[Paper]</i></a> 
-<br><br>
-
-<p style="margin:0"> 
-  <b>VividPose: Advancing Stable Video Diffusion for Realistic Human Image Animation</b><br>
-
-  Qilin Wang, Zhengkai Jiang, <b>Chengming Xu</b>, Jiangning Zhang, Yabiao Wang, Xinyi Zhang, Yun Cao, Weijian Cao, Chengjie Wang, Yanwei Fu
-  <br> <a href="https://arxiv.org/pdf/2405.18156"><i>[Paper]</i></a> 
-<br><br>
-
-    <hr>
-
-    
-    <script src="javascripts/scale.fix.js"></script>
-    <script> 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.parentNode.nextElementSibling.classList.toggle("show");
-      }
-    }
-    </script>
+    <script src="javascripts/research-filter.js"></script>
   </body>
 </html>
