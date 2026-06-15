@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "run_dir": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac",
+  "spritesheet": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac/final/spritesheet.webp",
+  "validation": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac/final/validation.json",
+  "contact_sheet": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac/qa/contact-sheet.png",
+  "review": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac/qa/review.json",
+  "videos": "/Users/xuchengming/codebank/chmxu.github.io/.codex-pet-runs/lilac/qa/videos",
+  "package": "/Users/xuchengming/.codex/pets/lilac"
+}
