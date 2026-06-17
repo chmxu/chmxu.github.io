@@ -5,6 +5,7 @@
   const yearFilter = document.getElementById('yearFilter');
   const typeFilter = document.getElementById('typeFilter');
   const searchFilter = document.getElementById('searchFilter');
+  const highlightFilter = document.getElementById('highlightFilter');
   const resetFilter = document.getElementById('resetFilter');
   const statusNode = document.getElementById('filterStatus');
 
@@ -21,9 +22,11 @@
     const year = yearFilter.value;
     const type = typeFilter.value;
     const query = normalize(searchFilter.value);
+    const highlightedOnly = highlightFilter.checked;
 
     const paperYear = paper.dataset.year || '';
     const paperType = paper.dataset.type || '';
+    const paperHighlight = paper.dataset.highlight === 'true';
     const searchText = normalize([
       paper.dataset.search,
       paper.querySelector('.paper-title')?.textContent,
@@ -33,6 +36,7 @@
 
     if (year !== 'all' && paperYear !== year) return false;
     if (type !== 'all' && paperType !== type) return false;
+    if (highlightedOnly && !paperHighlight) return false;
     if (query && !searchText.includes(query)) return false;
 
     return true;
@@ -70,7 +74,7 @@
     statusNode.textContent = `${visibleCount} publication${visibleCount === 1 ? '' : 's'} found.`;
   }
 
-  [yearFilter, typeFilter, searchFilter].forEach((node) => {
+  [yearFilter, typeFilter, searchFilter, highlightFilter].forEach((node) => {
     node.addEventListener('input', applyFilter);
     node.addEventListener('change', applyFilter);
   });
@@ -79,6 +83,7 @@
     yearFilter.value = 'all';
     typeFilter.value = 'all';
     searchFilter.value = '';
+    highlightFilter.checked = false;
     applyFilter();
   });
 

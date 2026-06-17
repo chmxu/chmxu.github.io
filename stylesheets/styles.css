@@ -224,6 +224,12 @@ p {
   font-size: 14px;
 }
 
+.paper-note {
+  margin: -8px 0 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
 .paper-meta {
   margin-top: 6px;
   color: var(--text-muted);
